@@ -387,3 +387,12 @@ nav {
         font-size: 15px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    #skills .container button {
+        font-size: 12px;
+    }
+    #skills .container .progres h6 {
+        font-size: 10px;
+    }
+}
