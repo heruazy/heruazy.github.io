@@ -285,7 +285,6 @@ nav {
 
 #about {
     padding-top: 65px;
-    height: 100vh;
     font-family: var(--sec-font);
 }
 
@@ -321,7 +320,6 @@ nav {
 .container img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
     margin-top: 2px;
-    border-radius: 2px;
 }
 
 @media screen and (max-width:1000px) {
@@ -378,5 +376,14 @@ nav {
     }
     #skills .container .accordion-body {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #skills .container .progres h6 {
+        font-size: 13px;
+    }
+    #skills .container button {
+        font-size: 15px;
     }
 }
