@@ -285,7 +285,7 @@ nav {
 
 #about {
     padding-top: 65px;
-    height: 200vh;
+    height: 100vh;
     font-family: var(--sec-font);
 }
 
@@ -293,7 +293,7 @@ nav {
     font-weight: 900;
     font-size: 40px;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .container .kanan p {
@@ -326,7 +326,7 @@ nav {
 
 @media screen and (max-width:1000px) {
     .container .kanan h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
     .container .kanan span {
         font-size: 10px;
@@ -350,10 +350,30 @@ nav {
         font-size: 10px;
     }
     .container .kanan h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
     .container .kanan a {
         margin-top: 5px;
         font-size: 5px;
+    }
+}
+
+
+/* SKILLS */
+
+#skills {
+    padding-top: 30px;
+    height: 100vh;
+    font-family: var(--sec-font);
+}
+
+#skills .container h2 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+@media screen and (max-width:1000px) {
+    #skills .container h2 {
+        font-size: 20px;
     }
 }
