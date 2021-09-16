@@ -322,7 +322,7 @@ nav {
     margin-top: 2px;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
     .container .kanan h2 {
         font-size: 20px;
     }
@@ -344,12 +344,6 @@ nav {
         font-size: 11px;
         margin: 3px auto;
     }
-    .container .kanan p {
-        font-size: 10px;
-    }
-    .container .kanan h2 {
-        font-size: 20px;
-    }
     .container .kanan a {
         margin-top: 5px;
         font-size: 7px;
@@ -361,7 +355,6 @@ nav {
 
 #skills {
     padding-top: 30px;
-    height: 100vh;
     font-family: var(--sec-font);
 }
 
@@ -370,7 +363,7 @@ nav {
     font-size: 40px;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
     #skills .container h2 {
         font-size: 20px;
     }
@@ -379,7 +372,7 @@ nav {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     #skills .container .progres h6 {
         font-size: 13px;
     }
@@ -394,5 +387,88 @@ nav {
     }
     #skills .container .progres h6 {
         font-size: 10px;
+    }
+}
+
+
+/* WORK */
+
+#work {
+    padding-top: 30px;
+    font-family: var(--sec-font);
+}
+
+#work .container h2 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#work .container {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    #work .container h2 {
+        font-size: 20px;
+    }
+}
+
+
+/* CONTACT */
+
+#contact {
+    padding-top: 30px;
+    font-family: var(--sec-font);
+}
+
+#contact .container h2 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#contact .container label {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    #contact .container h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #contact .container button {
+        font-size: 10px;
+    }
+    #contact .container label {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    height: 100px;
+    background-color: var(--font-color);
+    color: var(--bg);
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer a {
+    margin: 20px 10px;
+}
+
+@media screen and (max-width: 450px) {
+    footer p {
+        font-size: 11px;
     }
 }
