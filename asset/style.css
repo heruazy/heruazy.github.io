@@ -101,7 +101,6 @@ nav {
     height: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
     border-radius: 50px;
-    background: #ffb510;
     animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     animation-delay: 2s;
     margin-left: 5px;
@@ -317,7 +316,7 @@ nav {
 }
 
 .container img {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .4);
     margin-top: 2px;
 }
 
@@ -463,6 +462,7 @@ footer p {
 }
 
 footer a {
+    font-size: 20px;
     margin: 20px 10px;
 }
 
