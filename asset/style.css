@@ -360,6 +360,10 @@ nav {
     font-size: 40px;
 }
 
+#skills .container .progres h6 {
+    font-size: 15px;
+}
+
 @media screen and (max-width: 1000px) {
     #skills .container h2 {
         font-size: 20px;
