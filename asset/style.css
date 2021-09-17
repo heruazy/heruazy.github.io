@@ -137,7 +137,7 @@ nav {
     opacity: 0;
     font-weight: 900;
     font-family: 'Lato';
-    color: #222;
+    color: var(--sec-font-color);
     font-size: 20px;
     letter-spacing: 1px;
 }
