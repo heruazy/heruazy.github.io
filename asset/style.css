@@ -295,10 +295,11 @@ nav {
 }
 
 .container .kanan p {
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 0.5px;
     color: var(--sec-font-color);
     font-weight: 500;
+    margin-top: 25px;
     margin-bottom: 25px;
 }
 
@@ -306,7 +307,7 @@ nav {
     font-weight: 500;
     width: 300px;
     letter-spacing: 0.5px;
-    margin: 5px auto;
+    margin: 5px 0;
 }
 
 .container .kanan a {
@@ -340,6 +341,9 @@ nav {
         width: 300px;
         font-size: 11px;
         margin: 3px auto;
+    }
+    .container .kanan p {
+        margin-top: 5px;
     }
     .container .kanan a {
         font-size: 12px;
