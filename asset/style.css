@@ -445,15 +445,21 @@ nav {
     #contact .container h2 {
         font-size: 20px;
     }
+    #contact .container .alert {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 450px) {
     #contact .container button {
-        font-size: 10px;
+        font-size: 13px;
     }
     #contact .container label {
         font-size: 12px;
         font-weight: 500;
+    }
+    #contact .container .alert {
+        font-size: 10px;
     }
 }
 
