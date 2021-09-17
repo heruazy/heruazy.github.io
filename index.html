@@ -10,13 +10,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="asset/style.css">
 
-    <title>Heru Azy.</title>
+    <title>Heru Azy</title>
 </head>
 
 <body>
@@ -69,14 +72,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="img-about img">
+                    <div class="img-about img" data-aos="fade-in" data-aos-duration="700" data-aos-once="true">
                         <img src="asset/img-about.jpeg" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="kanan col-md-6">
                     <div class="row justify-content-start">
                         <div class="col-md-12 heading-section">
-                            <h2>About Me</h2>
+                            <h2 data-aos="fade-left" data-aos-once="true" data-aos-duration="700">About Me</h2>
                             <hr>
                             <p>Saya Heru Azy Pangestu. Saya lahir di Jakarta dan sekarang saya tinggal di kota Pemalang, Jawa Tengah. Saya adalah mahasiswa jurusan Manajemen Ekonomi di Universitas 17 Agustus Semarang. <br><br> Ini merupakan Website Portfolio
                                 yang saya bangun sendiri menggunakan syntax HTML5, CSS, dan juga JavaScript. Website ini juga menggunakan teknologi dari Bootstrap v.5 dan tentu saja sudah Responsive terhadap semua device yang anda gunakan.</p>
@@ -117,12 +120,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col text-center mb-3 mt-5">
-                    <h2>Skills</h2>
+                    <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">Skills</h2>
                     <hr>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-11">
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion" id="accordionExample" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="font-weight: 500;">
@@ -162,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-10 mt-5">
+                    <div class="col-sm-10 mt-5" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                         <div class="progres">
                             <h6>Microsoft Word</h6>
                             <div class="progress">
@@ -194,12 +197,12 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col mb-3 mt-5">
-                    <h2>Works</h2>
+                    <h2 data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">Works</h2>
                     <hr>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 mb-2" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
                     <div class="card">
                         <img src="asset/img-work/img1.png" class="card-img-top" alt="work1">
                         <div class="card-body">
@@ -207,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 mb-2" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
                     <div class="card">
                         <img src="asset/img-work/img2.png" class="card-img-top" alt="work2">
                         <div class="card-body">
@@ -215,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 mb-2" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
                     <div class="card">
                         <img src="asset/img-work/img3.png" class="card-img-top" alt="work3">
                         <div class="card-body">
@@ -263,8 +266,8 @@
 
     <!-- FOOTER -->
     <footer>
-        <a href="https://www.instagram.com/lm.heru/" target="blank"><i class="bi bi-instagram text-white"></i></a>
         <a href="https://github.com/heruazy" target="blank"><i class="bi bi-github text-white"></i></a>
+        <a href="https://www.instagram.com/lm.heru/" target="blank"><i class="bi bi-instagram text-white"></i></a>
         <a href="https://t.me/zyourbae" target="blank"><i class="bi bi-telegram text-white"></i></a>
         <p>Copyright ©2020 All rights reserved | Heru Azy.</p>
     </footer>
@@ -275,6 +278,12 @@
 
     <!-- MY SCRIPT -->
     <script src="asset/script.js "></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
