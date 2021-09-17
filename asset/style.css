@@ -225,7 +225,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .welcome .box {
         width: 250px;
     }
@@ -415,6 +415,12 @@ nav {
 @media screen and (max-width: 1000px) {
     #work .container h2 {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #work .container p {
+        font-size: 10px;
     }
 }
 
