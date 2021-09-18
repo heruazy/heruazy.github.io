@@ -133,7 +133,7 @@ nav {
 .box .role p {
     margin-top: 35px;
     animation: secFadeIn 2s forwards;
-    animation-delay: 3.7s;
+    animation-delay: 3.5s;
     opacity: 0;
     font-weight: 900;
     font-family: 'Lato';
