@@ -319,6 +319,11 @@ nav {
     margin-top: 2px;
 }
 
+#about .container img:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    transition: 300ms;
+}
+
 @media screen and (max-width: 1000px) {
     .container .kanan h2 {
         font-size: 20px;
@@ -366,6 +371,11 @@ nav {
     font-size: 15px;
 }
 
+#skills .container .accordion:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: 300ms;
+}
+
 @media screen and (max-width: 1000px) {
     #skills .container h2 {
         font-size: 20px;
@@ -409,6 +419,11 @@ nav {
 #work .container {
     font-size: 13px;
     font-weight: 500;
+}
+
+#work .container .card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    transition: 300ms;
 }
 
 @media screen and (max-width: 1000px) {
