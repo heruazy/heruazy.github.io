@@ -46,15 +46,12 @@ nav {
     bottom: 0;
     width: 0%;
     height: 2px;
-    opacity: 0;
     background: var(--font-color);
     transition: all .3s;
 }
 
 #navbarNav a:hover::after {
-    color: var(--main-color);
     width: 100%;
-    opacity: 1;
 }
 
 
@@ -419,37 +416,69 @@ nav {
 }
 
 
-/* ==========WORK========== */
+/* ==========PROJECTS========== */
 
-#work {
+#projects {
     padding-top: 30px;
     font-family: var(--sec-font);
 }
 
-#work .container h2 {
+#projects .container h2 {
     font-weight: 900;
     font-size: 40px;
 }
 
-#work .container {
+#projects img {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.project .caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 85%;
+    height: 0;
+    top: 0;
+    opacity: 0;
+    padding: 5px 10px;
+    background-color: #dddddd;
+    transition: all .3s;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.project:hover .caption {
+    height: 50px;
+    opacity: 1;
+}
+
+#projects .project:hover img {
+    opacity: .7;
+    transition: .5s;
+}
+
+#projects .container {
     font-size: 13px;
     font-weight: 500;
 }
 
-#work .row img:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
-    transition: .3s;
-    opacity: 0.9;
-}
-
 @media screen and (max-width: 1000px) {
-    #work .container h2 {
+    #projects .container h2 {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    #work .container p {
+    #projects .container p {
         font-size: 10px;
     }
 }
