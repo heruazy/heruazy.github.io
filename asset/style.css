@@ -16,7 +16,7 @@ body {
 }
 
 
-/* NAVBAR */
+/* ==========NAVBAR========== */
 
 nav {
     background-color: var(--bg);
@@ -29,6 +29,7 @@ nav {
 
 #navbarNav li a {
     font-weight: 700;
+    position: relative;
     margin: auto 20px;
     color: var(--font-color);
 }
@@ -38,12 +39,26 @@ nav {
     transition: .7s;
 }
 
-#navbarNav li a:hover {
+#navbarNav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    opacity: 0;
+    background: var(--font-color);
+    transition: all .3s;
+}
+
+#navbarNav a:hover::after {
     color: var(--main-color);
+    width: 100%;
+    opacity: 1;
 }
 
 
-/* ANIMATE WELCOME SECTION */
+/* ==========HOME========== */
 
 .welcome {
     width: 100%;
@@ -280,7 +295,7 @@ nav {
 }
 
 
-/* ABOUT */
+/* ==========ABOUT========== */
 
 #about {
     padding-top: 65px;
@@ -320,7 +335,7 @@ nav {
 }
 
 #about .container img:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
     transition: 300ms;
 }
 
@@ -355,7 +370,7 @@ nav {
 }
 
 
-/* SKILLS */
+/* ==========SKILLS========== */
 
 #skills {
     padding-top: 30px;
@@ -404,7 +419,7 @@ nav {
 }
 
 
-/* WORK */
+/* ==========WORK========== */
 
 #work {
     padding-top: 30px;
@@ -421,9 +436,9 @@ nav {
     font-weight: 500;
 }
 
-#work .container .card:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
-    transition: 300ms;
+#work .row img:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    transition: .3s;
 }
 
 @media screen and (max-width: 1000px) {
@@ -439,7 +454,7 @@ nav {
 }
 
 
-/* CONTACT */
+/* ==========CONTACT========== */
 
 #contact {
     padding-top: 30px;
@@ -478,7 +493,7 @@ nav {
 }
 
 
-/* FOOTER */
+/* ==========FOOTER========== */
 
 footer {
     text-align: center;
