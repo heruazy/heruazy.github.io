@@ -439,6 +439,7 @@ nav {
 #work .row img:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, .3);
     transition: .3s;
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 1000px) {
