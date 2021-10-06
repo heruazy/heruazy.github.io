@@ -449,7 +449,6 @@ nav {
     height: 0;
     top: 0;
     opacity: 0;
-    padding: 5px 10px;
     background-color: #dddddd;
     transition: all .3s;
     border-bottom-right-radius: 5px;
@@ -462,7 +461,7 @@ nav {
 }
 
 #projects .project:hover img {
-    opacity: .7;
+    opacity: .8;
     transition: .5s;
 }
 
