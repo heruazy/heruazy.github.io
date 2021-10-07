@@ -8,8 +8,8 @@ const myAlert = document.querySelector('.alert');
 form.addEventListener('submit', e => {
     e.preventDefault();
 
-    //  ketika tombol submit diklik
-    //  tampilkan tombol loading, hilangkan tombol kirim
+    //  if submit button on click.
+    //  show loading button, hide send button.
     btnLoading.classList.toggle('d-none');
     btnKirim.classList.toggle('d-none');
 
@@ -18,7 +18,7 @@ form.addEventListener('submit', e => {
             body: new FormData(form)
         })
         .then(response => {
-            //  tampilkan tombol kirim, hilangkan tombol loading
+            //  show send button, hide loading button.
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
             // tampilkan alert

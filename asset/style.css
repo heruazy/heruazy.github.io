@@ -42,12 +42,13 @@ nav {
 #navbarNav a::after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: 0;
     width: 0%;
     height: 2px;
-    background: var(--font-color);
     transition: all .3s;
+    transform: translateX(-50%);
+    background: var(--font-color);
 }
 
 #navbarNav a:hover::after {
@@ -329,11 +330,11 @@ nav {
 
 .container img {
     margin-top: 2px;
+    transition: .3s;
 }
 
 #about .container img:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, .2);
-    transition: 300ms;
 }
 
 @media screen and (max-width: 1000px) {
@@ -383,9 +384,45 @@ nav {
     font-size: 15px;
 }
 
-#skills .container .accordion:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    transition: 300ms;
+#skills .accordion {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+.skill-section {
+    position: relative;
+    text-align: center;
+    background: var(--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.skill-section img {
+    margin: 10px auto;
+    width: 80px;
+}
+
+.skill-section p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.top-line {
+    width: 0;
+    height: 6px;
+    background: var(--sec-font-color);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    border-radius: 0 0 3px 3px;
+    transition: all .5s;
+    transform: translateX(-50%);
+}
+
+.skill-section:hover .top-line {
+    display: block;
+    width: 80%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -429,6 +466,7 @@ nav {
 }
 
 #projects img {
+    border-radius: 1px;
     border: none;
     margin: 0;
     padding: 0;
@@ -449,7 +487,7 @@ nav {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 85%;
+    width: 90%;
     height: 0;
     top: 0;
     opacity: 0;
