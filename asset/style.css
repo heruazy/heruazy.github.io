@@ -480,6 +480,7 @@ nav {
 
 .skill-section {
     position: relative;
+    margin-bottom: 10px;
     text-align: center;
     background: var(--white);
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
@@ -500,7 +501,7 @@ nav {
 .top-line {
     width: 0;
     height: 6px;
-    background: var(--sec-font-color);
+    background: var(--main-color);
     position: absolute;
     left: 50%;
     top: 0;
@@ -515,6 +516,9 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
+    .skill-section h3 {
+        font-size: 20px;
+    }
     #skills .container h2 {
         font-size: 20px;
     }
@@ -568,7 +572,7 @@ nav {
 }
 
 .project:hover img {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
 }
 
 .project .caption {
@@ -617,7 +621,7 @@ nav {
 /* ============================================================ CONTACT */
 
 #contact {
-    padding-top: 30px;
+    padding-top: 60px;
     font-family: var(--sec-font);
 }
 
@@ -631,11 +635,16 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-    #contact .container h2 {
+    #contact .container h2,
+    #contact .card h5 {
         font-size: 20px;
     }
     #contact .container .alert {
         font-size: 13px;
+    }
+    #contact .text-muted,
+    #contact .card p {
+        font-size: 12px;
     }
 }
 
@@ -656,9 +665,10 @@ nav {
 /* ============================================================ FOOTER */
 
 footer {
-    text-align: center;
-    padding-top: 20px;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
     height: 100px;
     background-color: var(--font-color);
     color: var(--bg);
@@ -666,11 +676,6 @@ footer {
 
 footer p {
     margin-top: 10px;
-}
-
-footer a {
-    font-size: 20px;
-    margin: 20px 10px;
 }
 
 @media screen and (max-width: 450px) {
