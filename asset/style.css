@@ -16,7 +16,7 @@ body {
 }
 
 
-/* ==========NAVBAR========== */
+/* ============================================================ NAVBAR */
 
 nav {
     background-color: var(--bg);
@@ -55,7 +55,7 @@ nav {
 }
 
 
-/* ==========HOME========== */
+/* ============================================================ HOME */
 
 .welcome {
     width: 100%;
@@ -292,7 +292,7 @@ nav {
 }
 
 
-/* ==========ABOUT========== */
+/* ============================================================ ABOUT */
 
 #about {
     padding-top: 65px;
@@ -367,7 +367,7 @@ nav {
 }
 
 
-/* ==========SKILLS========== */
+/* ============================================================ SKILLS */
 
 #skills {
     padding-top: 30px;
@@ -416,7 +416,7 @@ nav {
 }
 
 
-/* ==========PROJECTS========== */
+/* ============================================================ PROJECTS */
 
 #projects {
     padding-top: 30px;
@@ -440,6 +440,10 @@ nav {
     justify-content: center;
 }
 
+.project:hover img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
 .project .caption {
     display: flex;
     justify-content: center;
@@ -461,8 +465,8 @@ nav {
 }
 
 #projects .project:hover img {
-    opacity: .8;
-    transition: .5s;
+    filter: grayscale(70%);
+    transition: .3s ease;
 }
 
 #projects .container {
@@ -483,7 +487,7 @@ nav {
 }
 
 
-/* ==========CONTACT========== */
+/* ============================================================ CONTACT */
 
 #contact {
     padding-top: 30px;
@@ -522,7 +526,7 @@ nav {
 }
 
 
-/* ==========FOOTER========== */
+/* ============================================================ FOOTER */
 
 footer {
     text-align: center;
