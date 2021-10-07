@@ -167,11 +167,11 @@ nav {
     position: relative;
     width: 24px;
     height: 24px;
+    top: -30px;
 }
 
 .scroll-down .text {
     display: block;
-    margin-bottom: 75px;
     margin-left: -30px;
     font-family: 'Lato';
     font-weight: 900;
