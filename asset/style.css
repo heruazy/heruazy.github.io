@@ -171,20 +171,20 @@ nav {
 
 .scroll-down .text {
     display: block;
-    margin-left: -30px;
-    font-family: 'Lato';
-    font-weight: 900;
-    font-size: 12px;
+    margin-left: -28px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 10px;
     text-transform: uppercase;
     white-space: nowrap;
-    opacity: .25;
+    opacity: .20;
     animation: pulse 1s linear alternate infinite;
 }
 
 .arrow {
     position: absolute;
     top: -65px;
-    width: 28px;
+    width: 20px;
     height: 8px;
     opacity: 0;
     transform: scale3d(0.5, 0.5, 0.5);
@@ -201,7 +201,7 @@ nav {
 
 .arrow::before,
 .arrow::after {
-    content: ' ';
+    content: '';
     position: absolute;
     background: var(--font-color);
     top: 0;
@@ -330,9 +330,6 @@ nav {
 @media screen and (max-width: 450px) {
     .welcome .box {
         width: 250px;
-    }
-    .scroll-down .container {
-        top: -30px;
     }
     .welcome .box .title h1 {
         font-size: 40px;
