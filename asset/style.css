@@ -167,7 +167,6 @@ nav {
     position: relative;
     width: 24px;
     height: 24px;
-    top: -30px;
 }
 
 .scroll-down .text {
@@ -331,6 +330,9 @@ nav {
 @media screen and (max-width: 450px) {
     .welcome .box {
         width: 250px;
+    }
+    .scroll-down .container {
+        top: -30px;
     }
     .welcome .box .title h1 {
         font-size: 40px;
